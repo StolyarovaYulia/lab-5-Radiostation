@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.3" />
+    <PackageReference Include="X.PagedList.Web.Common" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Radiostation.DAL\Radiostation.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\BroadGrid\AllEmployees.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\BroadGrid\Employee.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\BroadGrid\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\BroadGrid\TrackNoTime.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\BroadGrid\TrackTime.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Employee\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Employee\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Employee\Update.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Staff\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\TrackArchive\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Translation\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Translation\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Translation\Update.cshtml" />
+  </ItemGroup>
+
+</Project>
